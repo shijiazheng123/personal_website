@@ -1,0 +1,11 @@
+<div class="Page-Container">
+  <div class="Gallery" >
+    <div class="Gallery-Row">
+      <div class="Gallery-Image-Container"
+        *ngFor="let tile of tiles">
+        <img class="Gallery-Image" [src]="tile.url" />
+      </div>
+    </div>
+  </div>
+</div>
+

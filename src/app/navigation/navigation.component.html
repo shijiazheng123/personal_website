@@ -1,0 +1,22 @@
+<div id="NavBar">
+
+  <button [routerLink]="['/']" id="Logo">
+    <img id="Logo-image" src="assets/logo.png"/>
+  </button>
+  <button id="Menu" (click)="displayMenu()">
+    <img id="Menu-image" src="assets/menu.png"></button>
+
+  <div id="NavBar-Options">
+    <button [routerLink]="['/']" class="NavBar-Button" (click)="displayMenu()"
+            [ngClass]="{'selected': url === '/'}">About</button>
+    <button routerLink="/programming" class="NavBar-Button" (click)="displayMenu()"
+            [ngClass]="{'selected': url === '/programming'}"
+    >Programming</button>
+    <button routerLink="/art" class="NavBar-Button" (click)="displayMenu()"
+            [ngClass]="{'selected': url === '/art'}"
+    >Art</button>
+    <button routerLink="/design" class="NavBar-Button" (click)="displayMenu()"
+            [ngClass]="{'selected': url === '/design'}"
+    >Design</button>
+  </div>
+</div>

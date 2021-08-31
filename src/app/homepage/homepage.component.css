@@ -1,0 +1,57 @@
+#Home-Container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 20%;
+}
+
+
+#Home-Text{
+  grid-column-start: 2;
+  font-family: 'Cabin', Avenir, sans-serif;
+}
+
+#Home-Pic{
+  height: 50%;
+  margin: 25px 30px;
+  grid-column-start: 1;
+  justify-self: end;
+}
+#Profile{
+  height: 300px;
+  border-radius: 50px;
+
+}
+
+h1{
+  color: #E3175F;
+  font-weight: normal;
+}
+
+h3{
+  color: #40A6DE;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+p{
+  margin-top: 0;
+}
+br{
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  #Home-Container{
+    grid-template-columns: auto;
+  }
+  #Home-Text{
+    grid-column-start: 1;
+    text-align: center;
+  }
+  #Home-Pic{
+    justify-self: center;
+  }
+}
+
+

@@ -1,1 +1,111 @@
 /* You can add global styles to this file, and also import other style files */
+html *{
+  font-family: 'Cabin', Avenir, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin:0;
+  font-family: 'Cabin', Avenir, sans-serif;
+  height: 100%;
+}
+
+
+h1{
+  color: #E3175F;
+  font-weight: normal;
+}
+
+h3{
+  color: #40A6DE;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 1%;
+  margin-top: 3%;
+}
+p{
+  margin-top: 0;
+}
+br{
+  margin-top: 0;
+}
+
+.container{
+  font-family: 'Cabin', Avenir, sans-serif;
+  position: relative;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*padding-bottom: 20%;*/
+}
+
+.push{
+  clear:both;
+  height: 20%;
+}
+
+.Gallery{
+  min-width: 80%;
+  height: 150vh;
+  display: flex;
+  margin: 3% 45px 15%;
+  justify-content: center;
+  flex: 1;
+}
+
+.Gallery-Row{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 70%;
+  height: 30vh;
+  gap: 15px;
+  flex: 1;
+}
+
+.Gallery-Image-Container{
+  /*width: 33%;*/
+  height: 100%;
+}
+
+.Gallery-Image{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.Page-Container{
+  margin: 8% auto 20%;
+  font-family: 'Cabin', Avenir, sans-serif;
+  animation: fadein 1s;
+  flex: 1;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media only screen and (max-width: 800px) {
+  .Page-Container{
+    margin-top: 15%;
+  }
+  .Gallery{
+    margin-bottom: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Page-Container{
+    margin-top: 15%;
+  }
+  .Gallery{
+    margin-bottom: 300%;
+  }
+}
+
+/*Colors: #F9DF40 , #E3175F , #40A6DE*/
+
+/*html, body { height: 100%; }*/
+/*body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }*/

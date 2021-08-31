@@ -1,0 +1,101 @@
+
+#NavBar{
+  display: grid;
+  color: #E3175F;
+  background-color: #F9DF40;
+  padding: 0 33px 0 35px;
+  grid-template-columns: 50% 50%;
+  font-family: 'Cabin', Avenir, sans-serif;
+  position: fixed;
+  top:0;
+  width: 100vw;
+  z-index: 9999;
+  /*font-family: Cabin Avenir sans-serif;*/
+}
+
+#Menu{
+  display: none;
+  background-color: transparent;
+  border: 0;
+}
+
+#Menu-image{
+  height: 20px;
+  float: right;
+}
+
+#Logo{
+  background-color: transparent;
+  border: 0;
+  margin: 1% 0;
+  justify-content: flex-start;
+  grid-column-start: 1;
+}
+#Logo:hover{
+  cursor: pointer;
+}
+#Logo-image{
+  height: 40px;
+  width: auto;
+  float: left;
+}
+
+
+#NavBar-Options{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  grid-column-start: 2;
+}
+
+.NavBar-Button{
+  margin: 1% 0 1% 0%;
+  padding: .8% 2%;
+  border-radius: 50px;
+  border: 0;
+  font-size: 14px;
+  color: #E3175F;
+  background-color: transparent;
+}
+.NavBar-Button:hover{
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+.selected{
+  background-color: white;
+}
+.selected:hover{
+  background-color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  #NavBar{
+    /*grid-template-columns: auto;*/
+    /*display: flex;*/
+  }
+  #Menu{
+    display: block;
+  }
+  #Logo{
+    justify-content: center;
+    /*flex-grow: 1;*/
+    /*justify-self: center;*/
+  }
+  #NavBar-Options{
+    /*grid-column-start: 1;*/
+    flex-direction: column;
+    grid-column: span 2;
+    height: 100%;
+    display: none;
+  }
+  .NavBar-Button{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #NavBar-Options{
+    display: flex;
+  }
+}

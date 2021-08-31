@@ -1,0 +1,24 @@
+#Programming-Container{
+  display: grid;
+  margin: 8% 40px 0 42px;
+  /*justify-content: space-between;*/
+  /*flex-flow: row wrap;*/
+  grid-template-columns: auto auto auto;
+  column-gap: 3%;
+}
+.program-info{
+  max-width: 100%;
+  flex: 1 0 30%;
+  margin-bottom: 20%;
+}
+
+.programming-example{
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #Programming-Container{
+    grid-template-columns: auto;
+    margin-top: 15%;
+  }
+}
